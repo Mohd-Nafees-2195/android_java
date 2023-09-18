@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/menu_title"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MtechProject"
+        tools:targetApi="31">
+        <activity
+            android:name=".ExaminersActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".CSV_Format_Activity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".FetchStudentDocsByCoordinatorActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".FetchAllStudentByCoordinatorActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".SelectCSVFileActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".SelectCSVFileFacultyActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".AdminRegisterActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".AdminLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SetDueDateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CalendarPickerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FetchAnnounceDocsByCoordinatorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManagePeopleByCoordinatorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FetchAnnounceDocsByStudentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UploadFileByFacultyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FetchAnnounceDocsByExaminerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FetchAnnounceDocsByGuideActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GuideAndExaminerInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UploadNoticeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FetchStudentDocsByExaminerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FetchStudentDocsByGuideActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentFetchDataByExaminerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManageStudentByExaminerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManageStudentByGuideActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentFetchDataByGuideActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FacultyFetchDataManageActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".FacultyFetchDataActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".StudentFetchDataManageActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".StudentFetchDataActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Viewpdf"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".StudentFilesActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".UploadFileActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".UpdateProfileActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".ManagePeopleActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".AdminHomeActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".StudentLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FacultyHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FacultyLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FacultyRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cardbg">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:text="Update Panel"
+        android:background="@color/colorPrimaryDark"
+        android:textSize="@dimen/_20ssp"
+        android:gravity="center"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/sname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_15ssp"/>
+
+    <EditText
+        android:id="@+id/rollno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Roll Number"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_15ssp"/>
+
+    <EditText
+        android:id="@+id/course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Course"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_15ssp"/>
+
+<!--    <EditText-->
+<!--        android:id="@+id/semail"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="Email"-->
+<!--        android:textColorHint="@color/black"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:layout_marginTop="@dimen/_10sdp"-->
+<!--        android:textSize="@dimen/_15ssp"/>-->
+
+    <EditText
+        android:id="@+id/smobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mobile No"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_15ssp"/>
+
+    <Button
+        android:id="@+id/ssubmit"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:text="Update"
+        android:background="@drawable/round_btn"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:textSize="@dimen/_15ssp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        />
+
+</LinearLayout>

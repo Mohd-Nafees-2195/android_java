@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FacultyHomeActivity"
+    android:background="@color/cardbg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/menucolor"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ProfileFImage"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/student" />
+
+        <LinearLayout
+            android:id="@+id/relativeLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/menucolor"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/fullname_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/ProfileFImage"
+                android:includeFontPadding="false"
+                android:text="Full Name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15ssp" />
+
+            <TextView
+                android:id="@+id/email_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fullname_field"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="11dp"
+                android:layout_toRightOf="@+id/ProfileFImage"
+                android:includeFontPadding="false"
+                android:text="Email"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="@+id/relativeLayout3"
+        tools:layout_editor_absoluteX="0dp">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_90sdp"
+            android:background="@drawable/round_btn"
+            android:text="Guide"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@drawable/round_btn"
+            android:text="Examiner"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@drawable/round_btn"
+            android:text="Coordinator"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@drawable/round_btn"
+            android:text="All student"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/homeFProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:elevation="@dimen/_10sdp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

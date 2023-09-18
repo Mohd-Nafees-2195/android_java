@@ -1,0 +1,93 @@
+package com.mca.mtechproject;
+
+import android.annotation.SuppressLint;
+import android.app.DownloadManager;
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Environment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import com.firebase.ui.database.FirebaseRecyclerOptions;
+
+public class AnnounceDocsAdapterByStudent extends FirebaseRecyclerAdapter<FileModel,AnnounceDocsAdapterByStudent.MyViewHolder> {
+
+
+    /**
+     * Initialize a {@link RecyclerView.Adapter} that listens to a Firebase query. See
+     * {@link FirebaseRecyclerOptions} for configuration options.
+     *
+     * @param options
+     */
+    public AnnounceDocsAdapterByStudent(@NonNull FirebaseRecyclerOptions<FileModel> options) {
+        super(options);
+    }
+
+    @Override
+    protected void onBindViewHolder(@NonNull final AnnounceDocsAdapterByStudent.MyViewHolder holder, @SuppressLint("RecyclerView") final int position, @NonNull final FileModel model) {
+        holder.pdfNameInStudent.setText(model.getFileName());
+        holder.messageForStudent.setText(model.getMessage());
+        holder.imgViewByStudent.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(holder.imgViewByStudent.getContext(), Viewpdf.class);
+                intent.putExtra("fileName", model.getFileName());
+                intent.putExtra("fileUrl", model.getFileUrl());
+
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                holder.imgViewByStudent.getContext().startActivity(intent);
+            }
+        });
+
+        holder.downloadButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                DownloadManager.Request request = new DownloadManager.Request(Uri.parse(model.getFileUrl() + ""));
+                request.setTitle(model.getFileName());
+                request.setMimeType("application/pdf");
+                request.allowScanningByMediaScanner();
+                request.setAllowedOverMetered(true);
+                request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
+                request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, model.getFileName());
+                DownloadManager dm = (DownloadManager) holder.downloadButton.getContext().getSystemService(Context.DOWNLOAD_SERVICE);
+                dm.enqueue(request);
+                Toast.makeText(holder.downloadButton.getContext(), "Downloading Please Wait...", Toast.LENGTH_LONG).show();
+            }
+        });
+
+    }
+
+    @NonNull
+    @Override
+    public AnnounceDocsAdapterByStudent.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+
+        View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.single_row_announce_docs_for_student,parent,false);
+        return new MyViewHolder(view);
+    }
+    public class MyViewHolder extends RecyclerView.ViewHolder{
+
+        ImageView imgViewByStudent;
+        TextView pdfNameInStudent,messageForStudent;
+        Button downloadButton;
+
+        public MyViewHolder(@NonNull View itemView) {
+            super(itemView);
+            imgViewByStudent=itemView.findViewById(R.id.pdfviewByStudent);
+            pdfNameInStudent=itemView.findViewById(R.id.filenameByStudent);
+            messageForStudent=itemView.findViewById(R.id.messageForStudent);
+            downloadButton=itemView.findViewById(R.id.download);
+        }
+    }
+
+}

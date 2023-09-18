@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/cardbg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="@dimen/_1sdp"
+    android:elevation="@dimen/_4sdp"
+    android:layout_margin="@dimen/_5sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_1sdp"
+        android:orientation="vertical"
+        android:background="@color/rowbg">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:orientation="horizontal"
+            android:background="@color/rowbg">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ProfileImage"
+                android:layout_width="@dimen/_65sdp"
+                android:layout_height="@dimen/_65sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:src="@drawable/student"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:orientation="vertical"
+                android:background="@color/rowbg">
+
+                <TextView
+                    android:id="@+id/displayname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_18ssp"
+                    android:text="Arun Raj"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/displayroll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_16ssp"
+                    android:text="Roll Number"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/rowbg">
+
+            <TextView
+                android:id="@+id/displaycourse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_16ssp"
+                android:text="MCA"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/displayemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_16ssp"
+                android:text="priya@nitc.ac.in"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/displaycontact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_16ssp"
+                android:text="8610235853"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textColor="@color/black"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="353dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/_4sdp"
+            android:paddingBottom="@dimen/_1sdp">
+
+            <ImageView
+                android:id="@+id/edit"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_marginLeft="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:src="@drawable/edit_record" />
+
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="@dimen/_26sdp"
+                android:layout_height="@dimen/_26sdp"
+                android:layout_marginLeft="@dimen/_150sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:src="@drawable/delete_record" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_5sdp"
+    android:elevation="@dimen/_4sdp"
+    android:background="@color/cardbg"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_85sdp"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/_1sdp"
+        android:background="@drawable/singlerow_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <ImageView
+            android:id="@+id/pdfViewInFaculty"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:src="@drawable/pdf_icon" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:orientation="vertical"
+        android:background="@drawable/singlerow_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <TextView
+            android:id="@+id/fileNameInFaculty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_toRightOf="@id/pdfViewInFaculty"
+            android:gravity="center_vertical"
+            android:text="PDF Name"
+            android:textColor="#000000"
+            android:textSize="@dimen/_15ssp" />
+
+        <Button
+            android:id="@+id/deleteDocsByFacultyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_toRightOf="@id/pdfViewInFaculty"
+            android:text="Delete" />
+
+        <Button
+            android:id="@+id/download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="126dp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_toRightOf="@id/pdfViewInFaculty"
+            android:text="Download" />
+
+    </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

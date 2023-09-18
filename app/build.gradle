@@ -1,0 +1,76 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.mca.mtechproject'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.mca.mtechproject"
+        minSdk 28
+        targetSdk 32
+        versionCode 7
+        versionName "1.0.7"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.6.0'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    implementation 'com.google.firebase:firebase-firestore:24.4.3'
+    implementation 'com.google.firebase:firebase-auth:21.1.0'
+    implementation 'com.google.firebase:firebase-database:20.1.0'
+    implementation 'com.firebaseui:firebase-ui-database:8.0.2'
+    implementation 'com.google.firebase:firebase-storage:20.0.1'
+
+    // requesting permissions at runtime (to access file/ contact/ audio/ etc)
+    implementation 'com.karumi:dexter:6.2.3'
+
+    implementation 'com.squareup:android-times-square:1.6.5@aar'
+
+    // for responsive in different screen
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+    implementation 'com.intuit.ssp:ssp-android:1.1.0'
+    implementation 'com.google.firebase:firebase-storage-ktx:20.1.0'
+    implementation files('libs\\opencsv-5.7.1.jar')
+    implementation files('libs\\commons-lang3-3.12.0.jar')
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    // recyclerview
+    implementation "androidx.recyclerview:recyclerview:1.3.0"
+    implementation "com.google.android.material:material:1.8.0"
+    // cardview
+    implementation "androidx.cardview:cardview:1.0.0"
+
+    // Dialog will appear on the screen with animation
+    implementation 'com.orhanobut:dialogplus:1.11@aar'
+
+    // Glide supports fetching, decoding, and displaying video stills, images, and animated GIFs.
+    implementation 'com.github.bumptech.glide:glide:4.15.1'
+
+    // A fast circular ImageView perfect for profile images.
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    //read csv file
+    //implementation 'com.opencsv:opencsv:5.5.2'
+}

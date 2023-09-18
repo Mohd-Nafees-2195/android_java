@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#00BFFF</color>        <!-- (dark mode)   button colour-->
+    <color name="purple_500">#1976f2</color>        <!-- (light mode)   button colour /  menu bar color-->
+
+    <color name="purple_700">#3262C4</color>        <!--  status bar colour-->
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="toolbar">#1976f2</color>
+
+    <color name="colorPrimaryDark">#3262C4</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+
+    <color name="colorRed">#C11515</color>
+    <color name="purpleDark">#FF210642</color>
+    <color name="yellowLight">#fff777</color>
+
+    <color name="cardbg">#f0ead6</color>
+    <color name="rowbg">#DCDCDC</color>
+    <color name="headercolor">#1C94F3</color>
+    <color name="menucolor">#fece2f</color>
+    
+<!--    <color name="ActionBarTitle">#1976f2</color>-->
+
+</resources>
+

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardbg"
+    tools:context=".AdminRegisterActivity">
+
+    <include
+        android:id="@+id/login_toolbar"
+        layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+    <EditText
+        android:id="@+id/editTextSRegFullName"
+        android:layout_width="@dimen/_290sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="@dimen/_10sdp"
+        android:ems="10"
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="@dimen/_13sdp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextSRegEmail"
+        android:layout_width="@dimen/_290sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="@dimen/_10sdp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="@dimen/_13sdp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSRegFullName" />
+
+    <EditText
+        android:id="@+id/editTextSRegMobileNumber"
+        android:layout_width="@dimen/_290sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_phone_24"
+        android:drawablePadding="@dimen/_10sdp"
+        android:ems="10"
+        android:hint="Mobile Number"
+        android:inputType="phone"
+        android:paddingLeft="@dimen/_13sdp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSRegEmail" />
+
+
+    <EditText
+        android:id="@+id/editTextSRegPassword"
+        android:layout_width="@dimen/_290sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:drawablePadding="@dimen/_10sdp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="@dimen/_13sdp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSRegMobileNumber" />
+
+    <EditText
+        android:id="@+id/editTextSRegConfirmPassword"
+        android:layout_width="@dimen/_290sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_baseline_security_24"
+        android:drawablePadding="@dimen/_10sdp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:paddingLeft="@dimen/_13sdp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSRegPassword" />
+
+    <Button
+        android:id="@+id/buttonSRegister"
+        android:layout_width="@dimen/_195sdp"
+        android:layout_height="@dimen/_37sdp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/round_btn"
+        android:text="Register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSRegConfirmPassword" />
+
+    <TextView
+        android:id="@+id/textViewExistingUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="Already Have An Account?"
+        android:textColor="#57acf9"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSRegister"
+        app:layout_constraintVertical_bias="0.223" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/studentRegProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:elevation="@dimen/_10sdp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

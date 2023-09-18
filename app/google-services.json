@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "265638123124",
+    "project_id": "mtech-project-117d7",
+    "storage_bucket": "mtech-project-117d7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265638123124:android:c7c836aab6579585276321",
+        "android_client_info": {
+          "package_name": "com.mca.mtechproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "265638123124-b8188afd51lvb1l5a0n6btktcq599lsj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5ixlAfCt_69P54gwj9jNFAEBxV3m5xy8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "265638123124-b8188afd51lvb1l5a0n6btktcq599lsj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

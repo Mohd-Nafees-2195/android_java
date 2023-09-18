@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardbg"
+    tools:context=".AdminLoginActivity">
+
+    <include
+        android:id="@+id/login_toolbar"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/ins"
+        android:layout_width="411dp"
+        android:layout_height="653dp"
+        android:layout_marginTop="@dimen/_80sdp"
+        android:paddingHorizontal="@dimen/_40sdp"
+        android:paddingLeft="@dimen/_20sdp"
+        android:text="@string/about"
+        android:textColor="#6F7C80"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

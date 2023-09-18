@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Mtech Project</string>
+
+    <string name="menu_title">M.Tech Project</string>
+
+    <string name="about">
+
+        <br><b>Instructions to login:-\n</b>\n\n</br>
+        <br><b>1.</b> A user cannot login until admin registered.\n \n</br>
+        <br><b>2.</b> First time when you try to login using registered email and password, a verification link will be sent in your email id.\n \n</br>
+        <br><b>3.</b> You can change your password using forget password options.\n \n</br>
+        <br><b>4.</b> Students can find the upload option only when their guide set "Due Date and Time" for any evaluation.\n \n</br>
+        <br><b>5.</b> Student can see the list of faculty under whom they can complete their project.\n \n</br>
+        <!--        <br><b>6.</b> Faculty can see list of available student and can accept students who are interested in doing project under their guidance.\n \n</br>-->
+        </string>
+
+    <string name="csvformat">
+
+        <br><b>Format for CSV File(Student/ Faculty):-\n</b>\n\n</br>
+        <br><b>1.</b> Student\n \n</br>
+        <br><b></b> SL.No | fullName | email | course | mobileNumber | password | rollNumber\n \n</br>
+        <br><b>2.</b> Faculty\n \n</br>
+        <br><b></b> SL.No | fullName | email | department | mobileNumber | password \n \n</br>
+
+        </string>
+
+</resources>
